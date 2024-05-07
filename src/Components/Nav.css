@@ -38,6 +38,52 @@ nav ul li a {
   border-radius: 0.5rem;
 }
 
-nav ul li a:not(.active):hover { /*color of the tab as you hover over it other than the one that is currently selected*/
+nav ul li a:not(.active):hover {
+  /*color of the tab as you hover over it other than the one that is currently selected*/
   background-color: #172554;
+}
+nav .menu {
+  display: flex;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+  /*this is the styling/adding the dropdown when the site is less than 480px*/
+  nav .menu {
+    display: flex;
+  }
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  nav ul.open {
+    /*why does this not have a space between the ul and open because before when using the class name there was a space between the tag and the className*/
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    margin: 0.2rem 0.5rem; /*first number is the vertical margin between the tabs but what is the second number ????*/
+  }
 }
