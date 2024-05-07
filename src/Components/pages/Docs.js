@@ -4,7 +4,7 @@ import {Box} from "./TicTacToe/Box"
 export const Docs = () => {
   return (
   <div>
-<Box />
+<Box value="X" onClick={null} />
   </div>
   );
 };
