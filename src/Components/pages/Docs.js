@@ -19,7 +19,7 @@ export const Docs = () => {
   };
   return (
     <div className="App">
-      <h1>Tic Tac Toe</h1>
+      <h1 className="top">Tic Tac Toe</h1>
       <Board board={board} onClick={handleBoxClick} />
     </div>
   );
