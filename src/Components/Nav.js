@@ -11,7 +11,13 @@ export const Nav = () => {
           <NavLink>Home</NavLink>
         </li>
         <li>
-          <Link>Home</Link>
+          <NavLink>News</NavLink>
+        </li>
+        <li>
+          <NavLink>Docs</NavLink>
+        </li>
+        <li>
+          <NavLink>About</NavLink>
         </li>
       </ul>
     </nav>

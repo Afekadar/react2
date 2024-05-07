@@ -1,1 +1,5 @@
 export * from "./Home"
+export * from "./Website"
+export * from "./News"
+export * from "./Docs"
+export * from "./About"
