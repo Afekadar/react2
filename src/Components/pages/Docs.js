@@ -1,7 +1,5 @@
 import React from "react";
 
-const Docs = () => {
+export const Docs = () => {
   return <div></div>;
 };
-
-export default Docs;
