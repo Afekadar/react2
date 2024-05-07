@@ -3,16 +3,19 @@ import { Board } from "./TicTacToe/Board";
 
 export const Docs = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
+  const [xPlaying, setXPlaying] = useState(true);
   const handleBoxClick = (boxIdx) => {
     const updatedBoard = board.map((value, idx) => {
       if (idx === boxIdx) {
-        return "X";
+        return xPlaying === true ? "X" : "O";
       } else {
         return value;
       }
     });
 
     setBoard(updatedBoard);
+
+    setXPlaying(!xPlaying);
   };
   return (
     <div className="App">
