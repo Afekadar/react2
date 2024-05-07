@@ -10,4 +10,3 @@ export const Docs = () => {
     </div>
   );
 };
-//hello test
