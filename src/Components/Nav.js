@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Nav.css"
+import {link, Navlink} from react-rou
 
 const Nav = () => {
   return (
