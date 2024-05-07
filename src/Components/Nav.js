@@ -1,13 +1,16 @@
 import React from 'react'
 import "./Nav.css"
-import {link, Navlink} from react-router-dom
+import {Link, NavLink} from react-router-dom
 
 const Nav = () => {
   return (
     <nav>
       <ul>
         <li>
-Home
+<NavLink>Home</NavLink>
+        </li>
+        <li>
+<Link>Home</Link>
         </li>
       </ul>
     </nav>
