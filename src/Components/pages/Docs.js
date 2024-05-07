@@ -1,10 +1,11 @@
 import React from "react";
-import {Box} from "./TicTacToe/Box"
+import { Board } from "./TicTacToe/Board";
 
 export const Docs = () => {
+  const board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"];
   return (
-  <div>
-<Box value="X" onClick={null} />
-  </div>
+    <div className="App">
+      <Board board={board} onClick={null} />
+    </div>
   );
 };
