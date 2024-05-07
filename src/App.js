@@ -1,12 +1,10 @@
 import "./App.css";
-import {Nav} from "./Components/Nav"
+import { Nav } from "./Components/Nav.js";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <h1>hello</h1>
-    </>
+    <div>
+      <Nav />
+    </div>
   );
 }
-
-export default App;
