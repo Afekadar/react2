@@ -3,6 +3,7 @@ import { Board } from "./TicTacToe/Board";
 
 export const Docs = () => {
   const WINCON = [
+    //all the possible ways to win
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
