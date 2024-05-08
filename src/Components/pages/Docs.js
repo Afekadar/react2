@@ -24,6 +24,8 @@ export const Docs = () => {
       }
     });
 
+    checkWinner(updatedBoard);
+
     setBoard(updatedBoard);
 
     setXPlaying(!xPlaying);
@@ -35,7 +37,7 @@ export const Docs = () => {
 
       // Iterate through win conditions and check if either player satisfies them
       if (board[x] && board[x] === board[y] && board[y] === board[z]) {
-        setGameOver(true);
+        console.log(board[x]);
         return board[x];
       }
     }
