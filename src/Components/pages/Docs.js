@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Board } from "./TicTacToe/Board";
 
 export const Docs = () => {
+  //what is going on here in this logic
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xPlaying, setXPlaying] = useState(true);
   const handleBoxClick = (boxIdx) => {
