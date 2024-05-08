@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Board } from "./TicTacToe/Board";
+import { ScoreBoard } from "./TicTacToe/ScoreBoard";
 
 export const Docs = () => {
   const WINCON = [
@@ -41,8 +42,6 @@ export const Docs = () => {
       }
     }
 
-    console.log(scores);
-
     setBoard(updatedBoard);
 
     setXPlaying(!xPlaying);
@@ -62,6 +61,7 @@ export const Docs = () => {
   return (
     <div className="App">
       <h1 className="top">Tic Tac Toe</h1>
+      <ScoreBoard scores={scores} xPlaying={xPlaying} />
       <Board board={board} onClick={handleBoxClick} />
     </div>
   );

@@ -13,7 +13,7 @@ export const Nav = () => {
         className="menu"
         onClick={() => {
           setMenuOpen(!menuOpen);
-        }}
+        }} //if menuOpen exist then open else nothing
       >
         <span></span>
         <span></span>
@@ -21,8 +21,6 @@ export const Nav = () => {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-        {" "}
-        //if menuOpen exist then open else nothing
         <li>
           <NavLink to="/Home">Home</NavLink>
         </li>
